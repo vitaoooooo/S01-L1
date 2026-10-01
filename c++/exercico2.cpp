@@ -1,6 +1,5 @@
 #include <iostream>
 #include <string>
-
 using namespace std;
 
 class LinkSocial {
@@ -14,23 +13,24 @@ public:
         return nome;
     }
 
-    void setNome(string nome) {
-        this->nome = nome;
+    void setNome(string novoNome) {
+        nome = novoNome;
     }
+
     string getArcana() {
         return arcana;
     }
 
-    void setArcana(string arcana) {
-        this->arcana = arcana;
+    void setArcana(string novaArcana) {
+        arcana = novaArcana;
     }
 
     int getRank() {
         return rank;
     }
 
-    void setRank(int rank) {
-        this->rank = rank;
+    void setRank(int novoRank) {
+        rank = novoRank;
     }
 
     void subirRank() {
@@ -39,7 +39,6 @@ public:
 };
 
 int main() {
-
     LinkSocial link;
 
     link.setNome("Morgana");
