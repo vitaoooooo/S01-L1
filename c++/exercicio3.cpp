@@ -5,9 +5,10 @@ using namespace std;
 class MembroInatel {
 protected:
     string nome;
-public:
 
+public:
     MembroInatel(string nome) : nome(nome) {}
+
     virtual void seApresentar() {
         cout << "Sou um membro da comunidade Inatel: "
              << nome << "." << endl;
@@ -35,7 +36,6 @@ private:
     string disciplina;
 
 public:
-
     Professor(string nome, string disciplina)
         : MembroInatel(nome), disciplina(disciplina) {}
 
@@ -49,7 +49,7 @@ public:
 int main() {
     Aluno aluno("Vitor", "Engenharia de Software");
     Professor professor("Carlos", "Programacao");
-  
+
     aluno.seApresentar();
     professor.seApresentar();
 
