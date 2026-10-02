@@ -9,7 +9,6 @@ protected:
 
 public:
     Hobbit(string nome) : nome(nome) {}
-
     virtual void fazerAtividade() {
         cout << "O hobbit " << nome
              << " esta aproveitando um dia tranquilo na Comarca."
@@ -43,7 +42,6 @@ public:
 
 class Fazendeiro : public Hobbit {
 public:
-
     Fazendeiro(string nome) : Hobbit(nome) {}
 
     void fazerAtividade() override {
