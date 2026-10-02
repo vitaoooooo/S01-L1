@@ -11,7 +11,6 @@ public:
 
     void duelar(Banda &rival) {
         cout << nome << " esta duelando contra " << rival.nome << "!" << endl;
-
         rival.energia -= potenciaSom;
     }
 };
@@ -22,27 +21,28 @@ int main() {
 
     banda1.nome = "Metallica";
     banda1.integrantes = 4;
-    banda1.potenciaSom = 30.0;
+    banda1.potenciaSom = 30;
     banda1.energia = 100;
 
     banda2.nome = "Iron Maiden";
     banda2.integrantes = 5;
-    banda2.potenciaSom = 25.0;
+    banda2.potenciaSom = 25;
     banda2.energia = 100;
 
     banda1.duelar(banda2);
 
     cout << endl;
-    cout << "Status das bandas:" << endl;
 
-    cout << "Banda: " << banda1.nome << endl;
+    cout << "Status da banda 1:" << endl;
+    cout << "Nome: " << banda1.nome << endl;
     cout << "Integrantes: " << banda1.integrantes << endl;
     cout << "Potencia do som: " << banda1.potenciaSom << endl;
     cout << "Energia: " << banda1.energia << endl;
 
     cout << endl;
 
-    cout << "Banda: " << banda2.nome << endl;
+    cout << "Status da banda 2:" << endl;
+    cout << "Nome: " << banda2.nome << endl;
     cout << "Integrantes: " << banda2.integrantes << endl;
     cout << "Potencia do som: " << banda2.potenciaSom << endl;
     cout << "Energia: " << banda2.energia << endl;
